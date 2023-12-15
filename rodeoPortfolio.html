@@ -83,23 +83,31 @@
   </div>
 </main>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/JavaScript"> 
+  function killCopy(e){ return false } 
+  function reEnable(){ return true } 
+  document.onselectstart=new Function ("return false"); 
+  if (window.sidebar)
+  { 
+      document.onmousedown=killCopy; 
+      document.onclick=reEnable; 
+  } 
+</script>	
 <script type="text/javascript">
 $(function() {
     $(this).bind("contextmenu", function(e) {
         e.preventDefault();
     });
 }); 
+
+
+    hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function() {
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+  }
 </script>
-<script type="text/JavaScript"> 
-    function killCopy(e){ return false } 
-    function reEnable(){ return true } 
-    document.onselectstart=new Function ("return false"); 
-    if (window.sidebar)
-    { 
-        document.onmousedown=killCopy; 
-        document.onclick=reEnable; 
-    } 
-</script>	
+
 	</div>
 </body>
 </html>
