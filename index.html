@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <div class="logo">Riding for the Brand Photography</div><br>
+	<div class="topnav">
+		<h1 id="h1nav">Riding for the Brand Photography<br>PRCA Photographer Tanya Hamner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+				
+			<a href="https://tanyahamner.photoshelter.com/contact" style="color: #C4AA92">CONTACT TANYA</a>
+			
+		</h1> 
+	</div>
+	<br>
+
 		<header>
-			<div class="logo2">PRCA Photographer Tanya Hamner</div>
+			<div class="logo2"><img src="/images/logoills.png" style="width: 30%"></div>
 			<div class="hamburger">
 				<div class="line"></div>
 				<div class="line"></div>
@@ -18,9 +26,7 @@
 			</div>
 			<nav class="nav-bar">
 				<ul>
-					<li>
-						<a href="index.html" class="active">Home</a>
-					</li>
+
 					<li>
 						<a href="about.html">About</a>
 					</li>
@@ -39,20 +45,20 @@
 					<li>
 						<a href="https://tanyahamner.photoshelter.com/gallery/2024-Calendars/G0000bUwp7_InyHA">Calendars</a>
 					</li>
-					<li>
-						<a href="https://tanyahamner.photoshelter.com/contact">Contact ME</a>
-					</li>
+					
 				</ul>
 			</nav>
 		</header>
 
 	<br>
+
+	
 	<div id="content-wrapper">
 		<div class ="leftcolumn">
 			<div class="container">	
 				<div class="mySlides">
 						<div class="numbertext">1 / 6</div>
-						<img src="images/rodeo_portfolio/Tanya_Hamner_NFR_Open_-.jpg" style="width:100%">
+						<img src="images/rodeo_portfolio/Tanya_Hamner_NFR_Open_-.jpg" style="width:50%" align-items="center">
 				</div>
 				<div class="mySlides">
 						<div class="numbertext">2 / 6</div>
@@ -112,21 +118,21 @@
 		</div>
 		<div class="rightcolumn">
 			<h1>Special Sales</h1>
-			<hr>
+			<br>
 			<h2>USB Package</h2>
 			<h3>~ To purchase, select one photo and select the usb package and checkout</h3>
-			<h3>~ First Rodeo: $175 for all your photos at that rodeo for one contestant</h3>
-			<h3>~ For all your photos from all the rodeos I work for the current season $250</h3>
-			<hr>
-			<hr>
+			<h3>~ One Rodeo: $200 for all your photos at that rodeo for one contestant</h3>
+			<h3>~ For all your photos from all the rodeos I work for the current season $300</h3>
+			<br>
+			<br>
 			<h2>Extra Contestants</h2>
-			<h3>To add a contestant to the USB Package: $70 per rodeo</h3>
-			<h3>To add a contestant to the all the photos of all the rodeos an extra $125.</h3>
-			<hr>
-			<hr>
+			<h3>To add a contestant to the USB Package: $150 per rodeo</h3>
+			<h3>To add a contestant to the all the photos of all the rodeos an extra $175.</h3>
+			<br>
+			<br>
 			<h2>Buy 4 get 1 Free</h2>
 			<h3>When using this select all five photos then type in the coupon code: 4and1 </h3>
-			<hr>
+			<br>
 			<h3>&nbsp;</h3>
 			<h3>&nbsp; </h3>
 		</div>
@@ -177,34 +183,34 @@
 	
 
 		
-	// let slideIndex = 1;
-	// showSlides(slideIndex);
+	let slideIndex = 1;
+	showSlides(slideIndex);
 	
-	// function plusSlides(n) {
-	//   showSlides(slideIndex += n);
-	// }
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
 	
-	// function currentSlide(n) {
-	//   showSlides(slideIndex = n);
-	// }
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
 	
-	// function showSlides(n) {
-	//   let i;
-	//   let slides = document.getElementsByClassName("mySlides");
-	//   let dots = document.getElementsByClassName("demo");
-	//   let captionText = document.getElementById("caption");
-	//   if (n > slides.length) {slideIndex = 1}
-	//   if (n < 1) {slideIndex = slides.length}
-	//   for (i = 0; i < slides.length; i++) {
-	// 	slides[i].style.display = "none";
-	//   }
-	//   for (i = 0; i < dots.length; i++) {
-	// 	dots[i].className = dots[i].className.replace(" active", "");
-	//   }
-	//   slides[slideIndex-1].style.display = "block";
-	//   dots[slideIndex-1].className += " active";
-	//   captionText.innerHTML = dots[slideIndex-1].alt;
-	// }
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("demo");
+	  let captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
 	</script>
 </body>
 </html>
