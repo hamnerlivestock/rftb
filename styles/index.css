@@ -11,9 +11,21 @@ body {
 	background: #64461E;
 	color: #C4AA91;
 	background-image: url("/images/background/lighter\ leather.jpg");
-	
+	font-family: 'Times New Roman', Times, serif;
 
    
+}
+h1 { 
+	font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+	font-family: 'Times New Roman', Times, serif;
+}
+h3 {
+	font-family: 'Times New Roman', Times, serif;
+}
+p {
+	font-family: 'Times New Roman', Times, serif;
 }
 .topnav {
 	padding-top: 2%;
@@ -159,7 +171,7 @@ padding-top: 2%;
 }
 @media (min-width: 735px) and (max-width: 1899px){
 	h2 {
-		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		font-family: 'Times New Roman', Times, serif;
 		font-size: 2em;
 		color: #C4AA91; 
 		/* border:  3px solid #75593E; */
