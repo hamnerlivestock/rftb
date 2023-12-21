@@ -158,7 +158,7 @@ padding-top: 2%;
 }
 @media (min-width: 735px) and (max-width: 1899px){
 	h2 {
-		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		: font-family: 'Times New Roman', Times, serif;
 		font-size: 2em;
 		color: #C4AA91; 
 		/* border:  3px solid #75593E; */
@@ -533,7 +533,7 @@ padding-right: 10%;
         }	
         @media (min-width: 737px) and (max-width: 1900px){
             #h2porttitle {
-                font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+              font-family: 'Times New Roman', Times, serif;
                 font-size: 2em;
                 color: rgb(73,47,36); 
                 border-bottom:  3px solid #c4aa91;

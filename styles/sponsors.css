@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Times New Roman', Times, serif;
     background-image: url(Images/Pages%20Background/cream%20paper%20background.jpg);
     background-repeat: repeat;
     }
@@ -168,7 +168,7 @@ body {
         }	
         @media (min-width: 735px) and (max-width: 1899px){
             h2 {
-                font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+              font-family: 'Times New Roman', Times, serif;
                 font-size: 2em;
                 color: rgba(37,62,104,1.00); 
                 border-bottom:  3px solid rgb(3,16,53,1.00);
