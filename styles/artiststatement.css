@@ -1,125 +1,61 @@
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-	box-sizing: border-box;
-	/* overflow: hidden; */
-}
-body {
-	background: #64461E;
-	color: #C4AA91;
-	background-image: url("/images/background/cream\ paper\ background.jpg");
-	
-
-   
-}
-.topnav {
-	padding-top: 2%;
-	padding-left: 2%;
-	padding-right: 2%;
-}
-
-/* Header Nav Bar */
-header {
-	width: 100%;
-	height: 80px;
-	background-color: #75593E;
+.header {
+	background-color: antiquewhite;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 100px;
+	align-items: baseline;
+	padding: .5rem;
+	gap: 1rem;
 }
-.logo {
-	font-size: 20px;
-	font-weight: bold;
-	color: #C4AA91;
-} 
-.logo2 {
-	font-size: 13px;
-	font-weight: bold;
-	color: #C4AA91
+.link {
+	background: none;
+	border: none;
+	text-decoration: none;
+	color: #777;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+	padding:0;
+}
+.dropdown.active > .link,
+.link:hover {
+	color: black;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown-menu {
+	position: absolute;
+	left: 0;
+	top: calc(100% + .25rem);
+	background-color: white;
+	padding: .75rem;
+	border-radius: .25rem;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-10px);
+	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+}
+
+.information-grid {
+	display: grid;
+	grid-template-columns: repeat(2, max-content);
+	gap: 2rem;
+}
+.dropdown-links {
+	display: flex;
+	flex-direction: column;
+	gap: .25rem;
 }
 .hamburger {
 	display: none;
-
-}
-.nav-bar ul {
-	display: flex;
-}
-.nav-bar ul li a {
-	display: block;
-	color: #C4AA91;
-	font-size: 13px;
-	padding: 10px 25px;
-	border-radius: 50px;
-	transition: 0.2s;
-	margin: 0 5px;
-}
-.nav-bar ul li a:hover {
-	color: #C4AA91;
-	background: #75593E;
-}
-.nav-bar ul li a.active {
-	color: #C4AA91;
-	background: #75593E;
 }
 
-@media only screen and (max-width:1320px) {
-	header {
-		padding: 0 50px;
-	}
-	
-}
-@media only screen and (max-width:1100px) {
-	header {
-		padding: 0 30px;
-	}
-	
-}
-@media only screen and (max-width:900px) {
-	.hamburger {
-		display: block;
-		cursor: pointer;
-	}
-	.hamburger .line {
-		width: 30px;
-		height: 3px;
-		background: #C4AA91;
-		margin: 6px 0;
-	}
-	.nav-bar{
-		position: absolute;
-		height: 0px;
-		top: 150px;
-		left: 0;
-		right: 0;
-		width: 100vw;
-		background: #75593E;
-		transition: 0.5s;
-		overflow: hidden;
-	}
-	.nav-bar.active {
-		height: 450px;
-	}
-	.nav-bar ul {
-		display: block;
-		width: fit-content;
-		margin: 80px auto 0 auto;
-		text-align: center;
-		transition: 0.5s;
-		opacity: 0;
-	}
-	.nav-bar.active ul {
-		opacity: 1;
-	}
-	.nav-bar ul li a{
-		margin-bottom: 12px;
-		
-
-	}
-}
 #content {
     min-height: 850px;
     margin-left: 20px;
