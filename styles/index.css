@@ -5,17 +5,14 @@
 	text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 	box-sizing: border-box;
-	/* overflow: hidden; */
+	font-family: 'Times New Roman', Times, serif;
 }
 body {
 	background: #64461E;
-	color: #C4AA91;
+	/* color: #C4AA91; */
 	background-image: url("/images/background/lighter\ leather.jpg");
-	font-family: 'Times New Roman', Times, serif;
-
-   
 }
-h1 { 
+/* h1 { 
 	font-family: 'Times New Roman', Times, serif;
 }
 h2 {
@@ -25,13 +22,187 @@ h3 {
 	font-family: 'Times New Roman', Times, serif;
 }
 p {
-	font-family: 'Times New Roman', Times, serif;
-}
-.topnav {
-	padding-top: 2%;
+	
+} */
+#topnav {
+	width: 100%;
+	padding-top: 1%;
 	padding-left: 2%;
 	padding-right: 2%;
+	margin: 0 auto;
+	color: #f2f2f2;
 }
+.col-left {
+	width: 50%;
+	float: left;
+	height: 8vh;
+	padding-top: .5vh;
+	padding-bottom: .5vh;
+}
+.col-right {
+	width: 50%;
+	/* margin-left: 0%; */
+	float: right;
+	height: 8vh;
+	padding-top: .5vh;
+	padding-bottom: .5vh;
+	color: #f2f2f2;
+	a {
+		font-size: 2.5em;
+		color: #f2f2f2;
+
+	}
+}
+/* @media only screen and (max-width:1920px) {
+	#topnav {
+		width: 99vw;
+		padding-top: 1%;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin: 0 auto;
+		color: #f2f2f2;
+	}
+	.col-left {
+		width: 50vw;
+		float: left;
+		height: 8vh;
+		padding-top: .5vh;
+		padding-bottom: .5vh;
+	}
+	.col-right {
+		width: 25vw;
+		margin-right: -5%;
+		float: right;
+		height: 8vh;
+		padding-top: .5vh;
+		padding-bottom: .5vh;
+		color: #f2f2f2;
+		a {
+			font-size: 2.5em;
+			color: #f2f2f2;
+	
+		}
+	}
+}*/
+@media only screen and (max-width:1920px) {
+	.col-left {
+		height: 10%;
+		margin-left: 2%;
+	}
+	.col-right {
+		width: 30%;
+		margin-right: -7%;
+		height: 10vh;
+		padding-top: 1%;
+	}
+}
+@media only screen and (max-width:1650px) {
+	.col-left {
+		height: 10%;
+	}
+	.col-right {
+		width: 30%;
+		margin-right: -5%;
+		height: 10vh;
+		padding-top: 1%;
+	}
+}
+@media only screen and (max-width:1504px) {
+	.col-right {
+		margin-right: -2%;
+	}
+}
+@media only screen and (max-width:1320px) {
+	.col-right {
+		margin-right: 0%;
+	}
+}
+@media only screen and (max-width:1190px) {
+	.col-right {
+		margin-right: -4%;
+		width: 40%;
+	}
+}
+@media only screen and (max-width:1015px) {
+	.col-left {
+		font-size: 1em;
+		margin-left: 4%;
+	}
+	.col-right {
+		margin-right: -10%;
+		a {
+			font-size: 2em;
+		}
+	}
+}
+@media only screen and (max-width:942px) {
+	.col-left {
+		font-size: .8em;
+		margin-left: 3%;
+	}
+	.col-right {
+		margin-right: -15%;
+		a {
+			font-size: 1.5em;
+		}
+	}
+}
+@media only screen and (max-width:852px) {
+	.col-left {
+		margin-left: 1%;
+	}
+	.col-right {
+		margin-right: -16%;
+	}
+}
+@media only screen and (max-width:480px) {
+	.col-left {
+		font-size: .5em;
+	}
+	.col-right {
+		margin-right: -5%;	
+		font-size: .8em;
+	}
+}
+@media only screen and (max-width:320px) {
+	.col-left {
+		font-size: .3em;
+	}
+	.col-right {
+		margin-right: -1%;	
+		font-size: .6em;
+	}
+}
+/*
+@media only screen and (max-width:1318px) {
+	.col-right {
+		margin-right: 0%;
+	}
+}
+
+@media only screen and (max-width:1304px) {
+	.col-right {
+		width: 35vw;
+		margin-right: -10%;
+		padding-bottom: .7vh;
+	}
+}
+@media only screen and (max-width:1194px) {
+	.col-right {
+		margin-right: -8%;	
+	}
+}
+@media only screen and (max-width:1194px) {
+	.col-right {
+		margin-left: 3vw;	
+	}
+}
+@media only screen and (max-width:768px) {
+	.col-right {
+		margin-right: -8%;	
+	}
+}
+ */
 
 /* Header Nav Bar */
 header {
@@ -78,7 +249,7 @@ header {
 	background: #75593E;
 }
 
-@media only screen and (max-width:1320px) {
+/* @media only screen and (max-width:1320px) {
 	header {
 		padding: 0 50px;
 	}
@@ -131,7 +302,7 @@ header {
 		
 
 	}
-}
+} */
 
 
 /* Page */
@@ -151,11 +322,11 @@ font-size: 6px;
 }
 }	 */
 
-@media all and (min-width: 1900px) {
+/* @media all and (min-width: 1900px) {
 	h2 { font-size: 4em;
 	width: 30%;
 	color: #C4AA91; 
-		/* border:  3px solid #75593E; */
+
 	text-align: center;
 	padding-top: 2%;
 
@@ -174,8 +345,7 @@ padding-top: 2%;
 		font-family: 'Times New Roman', Times, serif;
 		font-size: 2em;
 		color: #C4AA91; 
-		/* border:  3px solid #75593E; */
-		/* border-right: 3px solid #75593E; */
+
 		width: 90%;
 		text-align: center;
 		padding-top: 2%;
@@ -185,36 +355,34 @@ padding-top: 2%;
 	font-size: 12px;
 	padding-top: 2%;
 	}
-	}	
+	}	 */
 				
 <!--SLIDESHOW AND THUMBNAILS-->
-* {
-box-sizing: border-box;
-}
 
-#photos {
+
+/* #photos {
 vertical-align: middle;
 
-}
+} */
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+/* .container {
 position: relative;
 padding: 1%;
-}
+} */
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
 display: none;
-}
+} */
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
+/* .cursor {
 cursor: pointer;
-}
+} */
 
 /* Next & previous buttons */
-.prev,
+/* .prev,
 .next {
 cursor: pointer;
 position: absolute;
@@ -227,70 +395,70 @@ font-size: 20px;
 border-radius: 0 3px 3px 0;
 user-select: none;
 -webkit-user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
 right: 0;
 border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
 color: #031035;
-}
+} */
 
 /* Number text (1/3 etc) */
-.numbertext {
+/* .numbertext {
 color: #293F82;
 font-size: 12px;
 padding: 28px 12px;
 position: absolute;
 top: 0;
-}
+} */
 
 /* Container for image text */
 
 
-.row:after {
-display: -ms-flexbox; /* IE10 */
+/* .row:after {
+display: -ms-flexbox;
 display: flex;
--ms-flex-wrap: wrap; /* IE10 */
+-ms-flex-wrap: wrap; 
 flex-wrap: wrap;
 padding: 0 4px;
-}
+} */
 /* Six columns side by side */
-.column {
+/* .column {
 float: right;
 width: 16.66%;
 padding-right: 3%;
-padding-bottom: 2%;
+padding-bottom: 2%; */
 /* margin-top: -211px; */
 
--ms-flex: 25%; /* IE10 */
-flex: 25%;
+/* -ms-flex: 25%;  */
+/* flex: 25%;
 
-}
+} */
 /* Add a transparency effect for thumnbail images */
-.demo {
+/* .demo {
 opacity: 0.6;
-}
+} */
 
-.active,
+/* .active,
 .demo:hover {
 opacity: 1;
-}
+} */
 
-
+/* 
 #photos {
 vertical-align: middle;
 padding:1px;
 border:1px solid #75593E;
 background-color:#C4AA91;
-}
+} */
 
-@media all and (max-width: 736px) {
+/* @media all and (max-width: 736px) {
 .text { display: none; }
 .column {
 float: right;
@@ -301,7 +469,7 @@ padding-left: 5%;
 display: block;
 
 
--ms-flex: 25%; /* IE10 */
+-ms-flex: 25%; 
 flex: 25%;
 }
 
@@ -350,8 +518,8 @@ padding: 3% 4%;
 color: white;
 width: 55%;
 }
-}
-	#content-wrapper{
+} */
+	/* #content-wrapper{
 	display:  flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -360,9 +528,9 @@ width: 55%;
 	padding-left: 3%;
 	padding-right: 5%;
 	padding-top: 2%;
-}
+} */
 
-.leftcolumn {
+/* .leftcolumn {
 	width: 50%;
 	padding-left: 10px;
 	
@@ -374,26 +542,26 @@ width: 55%;
 
 img {
   vertical-align: middle;
-}
+} */
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+/* .container {
   position: relative;
   max-width: 80%;
-}
+} */
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
   display: none;
-}
+} */
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
+/* .cursor {
   cursor: pointer;
-}
+} */
 
 /* Next & previous buttons */
-.prev,
+/* .prev,
 .next {
   cursor: pointer;
   position: absolute;
@@ -407,62 +575,62 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Number text (1/3 etc) */
-.numbertext {
+/* .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
+} */
 
 /* Container for image text */
-.caption-container {
-  text-align: center;
+/* .caption-container { */
+  /* text-align: center; */
   /* background-color: #f60f0f; */
-  padding: 2px 16px;
+  /* padding: 2px 16px;
   color: white;
-}
+} */
 
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Six columns side by side */
-.column {
+/* .column {
   float: left;
   width: 16.66%;
  
   padding: 1%;
-}
+} */
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+/* .demo {
   opacity: 0.6;
-}
+} */
 
-.active,
+/* .active,
 .demo:hover {
   opacity: 1;
-}
+} */
 
-#content-wrapper {
+/* #content-wrapper {
 padding-right: 10%;
 	display:  flex;
 	flex-wrap: wrap;
@@ -473,13 +641,13 @@ padding-right: 10%;
 	padding-left: 3%;
 	padding-right: 5%;
 	padding-top: 2%;
-}
+} */
 
 
 
 
 /* Footer */
 
-.text-center a{
+/* .text-center a{
 	color: #C4AA91;
-}
+} */
