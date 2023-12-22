@@ -50,7 +50,9 @@ p {
 	a {
 		font-size: 2.5em;
 		color: #f2f2f2;
-
+	}
+	a:active {
+		color: #f2f2f2;
 	}
 }
 /* @media only screen and (max-width:1920px) {
@@ -166,11 +168,11 @@ p {
 }
 @media only screen and (max-width:320px) {
 	.col-left {
-		font-size: .3em;
+		font-size: .1em;
 	}
 	.col-right {
 		margin-right: -1%;	
-		font-size: .6em;
+		font-size: .5em;
 	}
 }
 /*
