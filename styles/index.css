@@ -1,19 +1,9 @@
-/* * {
-	width: 100vw;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-	box-sizing: border-box;
-	font-family: 'Times New Roman', Times, serif;
-} */
 body {
 	margin: 0;
 	/* background: #64461E; */
 	background-image: url("/images/background/lighter\ leather.jpg");
 }
-/* #topnav {
+#topnav {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -33,7 +23,7 @@ body {
 .col-right {
 	width: 50%;
 	/* margin-left: 0%; */
-	/* float: right;
+	 float: right;
 	height: 8vh;
 	padding-top: .5vh;
 	padding-bottom: .5vh;
@@ -43,9 +33,9 @@ body {
 		color: #f2f2f2;
 	}
 	a:active {
-		color: #f2f2f2; */
-	/* } 
-} */
+		color: #f2f2f2; 
+	} 
+}
 .header {
 	background-color: antiquewhite;
 	display: flex;
@@ -103,136 +93,80 @@ body {
 .hamburger {
 	display: none;
 }
+
+
+
+
+
 /* 
-header {
+ BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY  BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY */
+
+
+
+
+*::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+.carousel {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.carousel > ul {
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 10vh;
-	background-color: #75593E;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	list-style: none;
 }
-.nav-bar ul {
-	display: flex;
+.slide {
+	position: absolute;
+	inset: 0;
+	opacity: 0;;
+	transition: 200ms opacity ease-in-out;
+	transition-delay: 200ms;
 }
-.logo {
-	padding-left: 2%;
-}
-.nav-bar ul li a {
+.slide > img {
 	display: block;
-	color: #C4AA91;
-	font-size: 1.5em;
-	padding: 15px;
-	border-radius: 50px;
-	transition: 0.2s;
-	margin: 0 5px;
+	width: 40%;
+	/* height: 100%; */
+	object-fit: cover;
+	object-position: center;
 }
-.nav-bar ul li a:hover {
-	background-color: #C4AA91;
-	color: #75593E;
-}
-.nav-bar ul li a.active {
-	color: #C4AA91;
-	background: #75593E;
-} */
-/* @media only screen and (max-width:1920px) {
-	.col-left {
-		height: 10%;
-		margin-left: 2%;
-	}
-	.col-right {
-		width: 30%;
-		margin-right: -7%;
-		height: 10vh;
-		padding-top: 1%;
-	}
-} */
-/* @media only screen and (max-width:1650px) {
-	.col-left {
-		height: 10%;
-	}
-	.col-right {
-		width: 30%;
-		margin-right: -5%;
-		height: 10vh;
-		padding-top: 1%;
-	}
-	/* .nav-bar ul li a {
-		padding: 8px;
-		margin: 0 30px;
-	} */
-/* }  */
-/* @media only screen and (max-width:1504px) {
-	.col-right {
-		margin-right: -2%;
-	}
-} */
-/* @media only screen and (max-width:1320px) {
-	.col-right {
-		margin-right: 0%;
-	}
-} */
-/* @media only screen and (max-width:1190px) {
-	.col-right {
-		margin-right: -4%;
-		width: 40%;
-	}
-} */
-/* @media only screen and (max-width:1015px) {
-	.col-left {
-		font-size: 1em;
-		margin-left: 4%;
-	}
-	.col-right {
-		margin-right: -10%;
-		a {
-			font-size: 2em;
-		}
-	}
-} */
-/* @media only screen and (max-width:942px) {
-	.col-left {
-		font-size: .8em;
-		margin-left: 3%;
-	}
-	.col-right {
-		margin-right: -15%;
-		a {
-			font-size: 1.5em;
-		}
-	}
-} */
-/* @media only screen and (max-width:852px) {
-	.col-left {
-		margin-left: 1%;
-	}
-	.col-right {
-		margin-right: -16%;
-	}
-} */
-/* @media only screen and (max-width:600px) {
-	header {
-		height: 6vh;
-	}
-} */
-/* @media only screen and (max-width:480px) {
-	.col-left {
-		font-size: .5em;
-	}
-	.col-right {
-		margin-right: -5%;	
-		font-size: .8em;
-	}
 
+.slide[data-active] {
+	opacity: 1;
+	/* z-index: 1; */
+	transition-delay: 0ms;
 }
-@media only screen and (max-width:320px) {
-	.col-left {
-		font-size: .1em;
-	}
-	.col-right {
-		margin-right: -1%;	
-		font-size: .5em;
-	}
-} */
+.carousel-button {
+	position: absolute;
+	z-index: 2;
+	background: none;
+	border: none;
+	font-size: 4rem;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgba(255, 255, 255, .5);
+	cursor: pointer;
+	border-radius: .25rem;
+	padding: 0 .5rem;
+	background-color: rgba(0, 0, 0, .1);
+}
+.carousel-button:hover,
+.carousel-button:focus {
+	color: white;
+	background-color: rgba(0,0,0, .2);
+}
+
+.carousel-button:focus {
+	outline: 1px solid black;
+}
+.carousel-button.prev {
+	left: 1rem;
+}
+.carousel-button.next {
+	right: 1rem;
+}
