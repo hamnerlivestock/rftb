@@ -210,3 +210,90 @@ body {
 			background-color: none;
 		}
 	}
+	@media  (max-width: 768px) {
+
+
+
+		.header {
+	
+			gap: 1rem;
+			margin-right: 80px;
+		}
+		.logo {
+			visibility:hidden;
+		}
+
+		.prev,
+			.next {
+			background-color: none;
+	
+			}
+			.leftcolumn {
+				width: 40%
+			}
+			.rightcolumn {
+				font-size: 12px;
+				padding-right: 1%;
+				width: 46%;
+			}
+		}
+	@media  (max-width: 400px) {
+
+
+		.col-right {
+	
+			float: left;
+			padding-bottom: 1%;
+	
+		}
+		.header {
+			margin-top: 66%;
+		}
+		.logo {
+			visibility:hidden;
+		}
+		.link {
+			/* margin-right: 3%; */
+			display: flex;
+
+			gap: -5rem;
+			font-size: 12px;
+		}
+		.prev,
+			.next {
+			font-size: 5px;
+			border: none;
+			background-color: none;
+			}
+		}
+		@media  (max-width: 390px) {
+
+
+			.col-right {
+		
+				float: left;
+				padding-bottom: 1%;
+		
+			}
+			.header {
+				margin-top: 66%;
+				gap: 1rem;
+			}
+			.logo {
+				visibility:hidden;
+			}
+			.link {
+				/* margin-right: 3%; */
+				display: flex;
+	
+				gap: -5rem;
+				font-size: 12px;
+			}
+			.prev,
+				.next {
+				visibility: hidden;
+				}
+				.rightcolumn {
+					font-size: 12px;
+				}
+			}
