@@ -128,9 +128,9 @@
 			<div class="dropdown-heading">My Story</div>
 			<div class="dropdown-links">
 				<a href="about.html" class="link">Meet Tanya</a>
-				<a href="artiststatement.html" class="link">Artist Statement</a>
+				<a href="artiststatement.html"    class="link">Artist Statement</a>
 				<a href="published.html" class="link">Publications</a>
-				<a href="Tanya Hamner CV.docx.pdf" class="link">Resume</a>
+				<a href="Tanya Hamner CV.docx.pdf" target=”_blank” rel="noopener noreferrer" class="link">Resume</a>
 			</div>
 		</div>
 		<div>
@@ -224,11 +224,14 @@ $(function() {
 </script>	
 	</div>
   <script>
-    hamburger = document.querySelector(".hamburger");
-	hamburger.onclick = function() {
-		navBar = document.querySelector(".nav-bar");
-		navBar.classList.toggle("active");
-	}
+function openSlideMenu() {
+	document.getElementById('side-menu').style.width = '250px';
+	document.getElementById('content-wrapper').style.width = '250px';
+}
+function closeSlideMenu() {
+	document.getElementById('side-menu').style.width = '0';
+	document.getElementById('content-wrapper').style.width = '0';
+}
   </script>
 </body>
 </html>

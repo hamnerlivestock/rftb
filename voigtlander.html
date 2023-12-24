@@ -254,11 +254,14 @@ $(function() {
 </script>	
 	</div>
   <script>
-    hamburger = document.querySelector(".hamburger");
-	hamburger.onclick = function() {
-		navBar = document.querySelector(".nav-bar");
-		navBar.classList.toggle("active");
-	}
+function openSlideMenu() {
+	document.getElementById('side-menu').style.width = '250px';
+	document.getElementById('content-wrapper').style.width = '250px';
+}
+function closeSlideMenu() {
+	document.getElementById('side-menu').style.width = '0';
+	document.getElementById('content-wrapper').style.width = '0';
+}
   </script>
 </body>
 </html>
