@@ -25,10 +25,14 @@ body {
 	background-color: #75593E;
 	display: flex;
 	align-items:center;
+
 	padding: .5rem;
 	gap: 2rem;
 	z-index: 10000;
+
+
 }
+
 .link {
 	background: none;
 	border: none;
@@ -91,7 +95,7 @@ body {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	left: 0;
+	right: 0;
 	background-color: #c4aa92;
 	opacity: 0.9;
 	overflow-x: hidden;
@@ -117,6 +121,7 @@ body {
 @media(max-width:668px){
 	.header > .dropdown {display: none;}
 	.dr-link{display: none;}
+
 }
 
 @media(min-width:668px){
