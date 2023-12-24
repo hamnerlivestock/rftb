@@ -11,12 +11,12 @@ body {
 	float: left;
 }
 .col-right {
-	color: bisque;
+	color: #c4aa92;
 	float: right;
 	margin-top: 2%;
 }
 .col-right > a{
-	color: bisque;
+	color: #c4aa92;
 	text-decoration: none;
 	font-size: 2em;
 }
