@@ -99,7 +99,7 @@ body {
 	background-color: #c4aa92;
 	opacity: 0.9;
 	overflow-x: hidden;
-	padding-top: 60px;
+	/* padding-top: 60px; */
 	transition: 0.5s;
 }
 .side-nav a{
@@ -130,8 +130,10 @@ body {
 	
 		width: 100%;
 	}
+	.side-nav a{
+		padding: 5px 3px 5px 15px;
 }
-
+}
 @media(min-width:668px){
 	.open-slide {display: none;}
 }
@@ -305,16 +307,16 @@ body {
 				display: none;
 				width: 0;
 			} */
-			.col-right {
+			/* .col-right {
 
 				float: left;
 				padding-bottom: 1%;
 		
-			}
-			.header {
+			} */
+			/* .header {
 				margin-top: 36%;
 				width: 97%;
-			}
+			} */
 			.leftcolumn {
 			
 				width: 100%;
