@@ -25,12 +25,9 @@ body {
 	background-color: #75593E;
 	display: flex;
 	align-items:center;
-
 	padding: .5rem;
 	gap: 2rem;
 	z-index: 10000;
-
-
 }
 
 .link {
@@ -99,7 +96,6 @@ body {
 	background-color: #c4aa92;
 	opacity: 0.9;
 	overflow-x: hidden;
-	/* padding-top: 60px; */
 	transition: 0.5s;
 }
 .side-nav a{
@@ -300,122 +296,26 @@ body {
 			}
 		}
 		@media(max-width:668px){
-			/* .header > .dropdown {display: none;}
-			.link{display: none;}
-		
-			.rightcolumn {
-				display: none;
-				width: 0;
-			} */
-			/* .col-right {
-
-				float: left;
-				padding-bottom: 1%;
-		
-			} */
-			/* .header {
+			.header {
 				margin-top: 36%;
 				width: 97%;
-			} */
+			}
 			.leftcolumn {
-			
 				width: 100%;
 			}
 			.prev,
 			.next {
-			font-size: 15px;
-			border: none;
-			background-color: transparent;
+			visibility: hidden;
 			} 
+			.numbertext { 
+				visibility: hidden;
+			}
 	
 		}
-		 /* @media  (max-width: 653px) {
-
-
-			.col-right {
-		
-				/* float: left; */
-				/* padding-bottom: 1%;
-		
-			}
-			.header {
-				margin-top: 30%;
-				width: 100%;
-			}
-			.logo {
-				visibility:hidden;
-			} */
-			/* .link { */
-				/* margin-right: 3%; */
-				/* display: flex;
-	
-				gap: -5rem;
-				font-size: 12px;
-			}
-			.prev,
-				.next {
-				font-size: 5px;
-				border: none;
-				background-color: none;
-				} */ 
-			/* }
-	@media  (max-width: 400px) {
-
-
-		.col-right {
-	
-			float: left;
-			padding-bottom: 1%;
-	
-		}
-		.header {
-			margin-top: 66%;
-		}
-		.logo {
-			visibility:hidden;
-		}
-		.link {
-			/* margin-right: 3%; */
-			/* display: flex;
-
-			gap: -5rem;
-			font-size: 12px;
-		}
-		.prev,
-			.next {
-			font-size: 5px;
-			border: none;
-			background-color: none;
-			}
-		}
-		@media  (max-width: 390px) { */
-
-/* 
-			.col-right {
-		
-				float: left;
-				padding-bottom: 1%;
-		
-			}
-			.header {
-				margin-top: 66%;
-				gap: 1rem;
-			}
-			.logo {
-				visibility:hidden;
-			}
-			.link { */
-				/* margin-right: 3%; */
-				/* display: flex;
-	
-				gap: -5rem;
-				font-size: 12px;
-			}
+		@media  (max-width: 390px) { 
 			.prev,
 				.next {
 				visibility: hidden;
 				}
-				.rightcolumn {
-					font-size: 12px;
-				}
-			} */ 
+		
+			} 
