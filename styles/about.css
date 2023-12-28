@@ -197,7 +197,7 @@ color: #75593E;
 cursor: pointer;
 position: absolute;
 top: 60%;
-padding: 30px;
+padding: 5px;
 margin-top: -50px;
 color: #031035;
 font-weight: bold;
@@ -206,6 +206,8 @@ border-radius: 0 3px 3px 0;
 user-select: none;
 -webkit-user-select: none;
 background-color: rgba(117, 89, 62, 0.7 );		
+/* margin-left: 0px; */
+/* margin-right: 0px; */
 }
 .next {
 	right: 0;

@@ -229,7 +229,7 @@ body {
 	transition: 0.5s;
 }
 .side-nav a{
-	padding: 10px 10px 10px 30px;
+	padding: 10px 10px 10px 5px;
 	text-decoration: none;
 	font-size: 22px;
 	display: block;
