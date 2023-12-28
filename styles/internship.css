@@ -250,7 +250,7 @@ body {
 #content-wrapper {
 	margin-top: 2%;
 	margin-left: 2%;
-	margin-right: 3%;
+	/* margin-right: 3%; */
 	z-index: -100;
 	position: relative;
 }
@@ -369,12 +369,12 @@ body {
 #content {
     min-height: 850px;
     margin-left: 20px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     
 }
 
 #artistme {
-margin-right: 1%;
+/* margin-right: 1%; */
 padding-left: 1%;
 padding-bottom: 1%;
 -webkit-filter: drop-shadow(3px 3px 3px #222 );
@@ -382,7 +382,7 @@ filter: drop-shadow(3px 3px 3px #222);
 }
 .artp {
 margin-left: 1%;
-margin-right: 41%;
+/* margin-right: 41%; */
 /* padding-bottom: 15% */
 }
 h1 {
