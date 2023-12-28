@@ -215,13 +215,7 @@ background-color: rgba(117, 89, 62, 0.7 );
 .next:hover {
 	color: #031035;
 }
-.numbertext {
-	color: #293F82;
-	font-size: 12px;
-	padding: 28px 12px;
-	position: absolute;
-	top: 0;
-}
+/* // */
 .row:after {
 	display: -ms-flexbox; 
 	display: flex;
