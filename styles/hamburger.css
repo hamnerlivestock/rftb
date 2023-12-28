@@ -133,7 +133,6 @@ body {
     @media  (max-width: 768px) {
         .header {
             gap: 1rem;
-            margin-right: 80px;
         }
         .logo {
             visibility:hidden;

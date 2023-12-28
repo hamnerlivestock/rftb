@@ -147,7 +147,7 @@ color: #75593E;
 @media(max-width:768px){
     .header {
         gap: 1rem;
-        margin-right: 80px;
+        /* margin-right: 80px; */
     }
 }
 @media(max-width:668px){
