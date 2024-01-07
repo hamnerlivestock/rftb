@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 .header {
-	margin-top: 7%;
+	margin-top: 15%;
 	background-color: #75593E;
 	display: flex;
 	align-items:center;
@@ -115,7 +115,7 @@ body {
 }
 	@media  (max-width: 2880px) {
 		.header {
-			margin-top: 6%;
+			margin-top: 10%;
 		}
 	}
 	@media  (max-width: 1849px) {
